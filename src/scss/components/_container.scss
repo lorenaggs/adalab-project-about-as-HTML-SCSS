@@ -1,0 +1,12 @@
+.container {
+  margin: 0 6.5%;
+  display: grid;
+
+  @media all and (min-width: 768px) {
+    grid-auto-flow: column;
+    grid-gap: 6.5%;
+  }
+  @media all and (min-width: 1200px) {
+    margin: 0 10%;
+  }
+}

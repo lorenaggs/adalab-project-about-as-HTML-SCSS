@@ -1,0 +1,89 @@
+// los estilos header van en layout/header
+.header {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-green);
+}
+
+.header__title {
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-family: Rubik;
+  height: 60px;
+  line-height: 40px;
+  a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.1s;
+
+    &:hover {
+      color: var(--dark-gray);
+    }
+  }
+}
+
+.header__nav {
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+  padding: 8px 5px 7px;
+  font-family: Rubik;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header__nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.menu__item {
+  transition-duration: 0.1s;
+}
+.menu__item:hover {
+  color: var(--dark-gray);
+}
+
+// mobile
+@media (max-width: 768px) {
+  .header {
+    display: block;
+    background-color: transparent;
+  }
+  .header__title {
+    background-color: var(--blue-green-opacidad);
+  }
+  .header__nav {
+    background-color: var(--aqua-opacidad);
+  }
+}
+
+// Propuesta de márgenes para el header
+
+@media (min-width: 768px) {
+  .header__title {
+    margin-left: 6.5%;
+  }
+
+  .header__nav {
+    margin-right: 6.5%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .header__title {
+    margin-left: 10%;
+  }
+
+  .header__nav {
+    margin-right: 10%;
+  }
+}
